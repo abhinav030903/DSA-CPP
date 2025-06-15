@@ -51,10 +51,20 @@ void pattern6(int N) {
         cout << endl;
     }
 }
-
+void pattern7(int N) {
+    for (int i = 1; i <= N; ++i) {
+        for (int space = 1; space <= N - i; ++space) {
+            cout << " ";
+        }
+        for (int star = 1; star <= 2 * i - 1; ++star) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 int main() {
     int N;
     cin >> N;
-    pattern6(N);
+    pattern7(N);
     return 0;
 }
